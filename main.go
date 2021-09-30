@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/ektagarg/gin-gorm-todo-app/Config"
 	"github.com/ektagarg/gin-gorm-todo-app/Models"
 	"github.com/ektagarg/gin-gorm-todo-app/Routes"
@@ -18,11 +17,10 @@ func main() {
 	if err != nil {
 		fmt.Println("statuse: ", err)
 	}
-
+	
 	defer Config.DB.Close()
 	Config.DB.AutoMigrate(&Models.Todo{})
 
 	r := Routes.SetupRouter()
-	// running
 	r.Run()
 }
