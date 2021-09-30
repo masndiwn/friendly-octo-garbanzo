@@ -30,7 +30,7 @@ $ go get github.com/jinzhu/gorm
 ## Post Params
 ```
 {
-	"name": "Groceries shopping",
-	"description": "Biscuits, Tea, Milk, Soap, Powder",
+	"name": "Get Groceries From Shopping",
+	"description": "Biscuits, Tea, Milk, Soap, Powder, Chocolates",
 }
 ```
